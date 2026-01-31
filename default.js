@@ -1,2 +1,2 @@
-let x;
-console.log(typeof(x));
+let test=(x)=>{console.log(x)};
+test(5);
