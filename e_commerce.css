@@ -1,0 +1,16 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: police;
+    src: url("Dancing_Script,Lato,Poppins,Quicksand,Roboto/Poppins/Poppins-Thin.ttf");
+}
+html{
+    --main_color:#F7F7FF;
+    --secondary-color:#64b5f6; 
+    --last_color:#131112;
+    font-family: police;
+}
