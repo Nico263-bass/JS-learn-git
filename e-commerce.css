@@ -2,12 +2,12 @@
 html,::before,::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 };
 @font-face {
-    font-family: police_1;
-    src: url(Dancing_Script,Lato,Poppins,Quicksand,Roboto/Lato/Lato-Regular.ttf);
+    font-family:ma_polide;
+    src: url('Dancing_Script,Lato,Poppins,Quicksand,Roboto/Lato/Lato-BoldItalic.ttf');
 }
 body{
-    font-family: police_1;
+    font-family:ma_police;
 }
