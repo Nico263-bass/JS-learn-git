@@ -4,3 +4,10 @@ html,::before,::after{
     padding: 0;
     box-sizing: border-box;
 };
+@font-face {
+    font-family: police_1;
+    src: url(Dancing_Script,Lato,Poppins,Quicksand,Roboto/Lato/Lato-Regular.ttf);
+}
+body{
+    font-family: police_1;
+}
