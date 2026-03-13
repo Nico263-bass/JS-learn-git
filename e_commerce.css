@@ -40,7 +40,7 @@ html{
     --border:#EDEDED;
     --background1:#F5F5F5;
     --background2:#F6F6FC;
-    --yellow1:#E3BC01; 
+    --yellow1:#E3BC01;
     --yellow2:#E3BC01;
     --blanc:#ffffff;
     --background3:#F3F9FB;
@@ -166,7 +166,7 @@ hr{
     justify-content: center;
     align-items: center;
     gap: 5px;
-    
+
 }
 .logo{
     font-family:lato;
@@ -304,7 +304,7 @@ hr{
     color:var(--text);
     margin-top:5%;
     padding-inline-start: 9%;
-    font-family: poppins_bold; 
+    font-family: poppins_bold;
 }
 p>span{
     color:var(--primary);
@@ -313,7 +313,7 @@ p>span{
 .img{
     width:83.4%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
     grid-auto-flow:row;
     grid-auto-rows:300px;
@@ -321,7 +321,6 @@ p>span{
     margin-right: auto;
     margin-top: 2em;
     overflow: hidden;
-    
 }
 .gritem{
     background-color: var(--blanc);
@@ -336,7 +335,7 @@ p>span{
     position: relative;
     overflow: hidden;
     font-size: 16px;
-    border: 1px solid rgb(179, 179, 155);
+    border: 1px solid var(--line);
 }
 .gritem>img{
     width:80%;
@@ -345,7 +344,8 @@ p>span{
     object-position: center;
     transition:1s all;
 }
-.test1{
+/* On fait un design simple, mais que ça soit fonctionel */
+/* .test1{
      grid-column-start: 1;
      grid-column-end: 3;
      grid-row-start: 1;
@@ -373,7 +373,7 @@ p>span{
     border: 1px solid var(--primary);
     padding-top: 5%;
 
-}
+} */
 .test::before{
     content: "New";
     font-family:poppins_bold;
@@ -387,7 +387,7 @@ p>span{
     height:30px;
     top:15px;
     left: -50px;
-    background-color:coral;
+    background-color:darkorange;
     transform: rotate(-45deg);
     text-indent: 20px;
 }
@@ -415,40 +415,13 @@ p>span{
     background-color:var(--background3);
     align-self: stretch;
     flex: 1;
-    color:#212844;
+    color:var(--text);
     padding-top:15px;
     padding-inline: 15px;
     padding-block: 15px;
-    font-family:poppins_bold;
-    font-size: 1.5rem;
+    font-family:lato;
+    font-size: 1rem;
     display:grid;
     grid-template-columns:2fr 1fr;
     grid-template-rows: 1fr 1fr;
-}
-.info>.blocInfo{
-    font-family: inherit;
-    display: flex;
-    flex-direction: column;
-}
-.info>.blocInfo>span{
-    font-family: lato;
-    font-size: 16px;
-    text-align: left;
-}
-.prix{
-    justify-self: stretch !important;
-    text-align: right;
-    grid-column: 2/3;
-    font-family: lato !important;
-    font-size:1em;
-    color:#f46969
-}
-.stars{
-    color:rgb(129, 44, 44);
-    grid-column:1/3;
-    /* background-color: #000000; */
-    justify-self: start;
-}
-.fa-star {
-  font-size: 16px;
-}
+};
