@@ -71,6 +71,9 @@ hr{
     color:var(--primary);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: relative;
+    position:sticky;
+    top:0;
+    z-index: 1;
 }
 .welcom{
    grid-column-start: 1;
@@ -424,4 +427,56 @@ p>span{
     display:grid;
     grid-template-columns:2fr 1fr;
     grid-template-rows: 1fr 1fr;
-};
+}
+.NomProduit{
+    justify-self: flex-start;
+    font-family:poppins_bold;
+    
+}
+.descProduit{
+    grid-column: 1/2;
+    justify-self: flex-start;
+    text-align: left;
+    font-size: 12px;
+}
+.btn{
+    width: 70px;
+    border-radius: 5px;
+    justify-self:flex-end;
+    cursor:pointer;
+    grid-row:span 2;
+    font-size:10px;
+    font-family: poppins_bold;
+    color:#fff;
+    border:none;
+    background-color:darkorange;
+}
+.prix{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+    color:var(--text);
+}
+/*  ajout du style indiquant le nombre d'articles dans le panier */
+.cardItem{
+    position: relative;
+}
+.active{
+    content:"";
+    width:20px;
+    height: 20px;
+    background-color:red;
+    color:#fff;
+    font-size: 8px;
+    border-radius: 30px;
+    font-family:poppins_bold;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -18px;
+    left:2px;
+}
+.badge{
+    display: flex;
+}
